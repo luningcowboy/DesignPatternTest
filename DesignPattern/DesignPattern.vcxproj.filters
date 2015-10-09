@@ -19,6 +19,9 @@
     <Filter Include="源文件\AbstactFactory">
       <UniqueIdentifier>{63c13a88-4dc3-4291-bbd7-afd7336fd38c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Singleton">
+      <UniqueIdentifier>{7c950e92-1f3d-47c0-a452-23e650439e51}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,6 +39,9 @@
     <ClCompile Include="AbstractFactory.cpp">
       <Filter>源文件\AbstactFactory</Filter>
     </ClCompile>
+    <ClCompile Include="SingleTon.cpp">
+      <Filter>源文件\Singleton</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -49,6 +55,9 @@
     </ClInclude>
     <ClInclude Include="AbstractFactory.h">
       <Filter>源文件\AbstactFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleTon.h">
+      <Filter>源文件\Singleton</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

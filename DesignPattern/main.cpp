@@ -3,16 +3,20 @@
 #include "Product.h"
 #include "AbstractFactory.h"
 #include "AbstractProduct.h"
+#include "SingleTon.h"
 
 using namespace std;
 /*测试Factory设计模式*/
 void testFactory();
 /*测试抽象工厂模式*/
 void testAbstractFactory();
+/*测试单例模式*/
+void testSingleton();
 int main()
 {
 	testFactory();
 	testAbstractFactory();
+	testSingleton();
 
 	cout << "Hello world" << endl;
 	system("pause");
@@ -40,5 +44,12 @@ void testAbstractFactory()
 	af2->createProductB();
 	af3->createProductA();
 	af3->createProductB();
+	cout << "end=============" << endl;
+}
+
+void testSingleton()
+{
+	cout << "测试单例模式" << endl;
+	Singleton * pSgn = Singleton::getInstance();
 	cout << "end=============" << endl;
 }
