@@ -78,11 +78,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AbstractFactory.cpp" />
+    <ClCompile Include="AbstractProduct.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Product.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AbstractFactory.h" />
+    <ClInclude Include="AbstractProduct.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Product.h" />
   </ItemGroup>

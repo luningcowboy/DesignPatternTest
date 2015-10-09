@@ -16,6 +16,9 @@
     <Filter Include="源文件\Factory">
       <UniqueIdentifier>{7e844a37-e3b5-4d7a-a5f0-2be702436e56}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\AbstactFactory">
+      <UniqueIdentifier>{63c13a88-4dc3-4291-bbd7-afd7336fd38c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -27,6 +30,12 @@
     <ClCompile Include="Product.cpp">
       <Filter>源文件\Factory</Filter>
     </ClCompile>
+    <ClCompile Include="AbstractProduct.cpp">
+      <Filter>源文件\AbstactFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory.cpp">
+      <Filter>源文件\AbstactFactory</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -34,6 +43,12 @@
     </ClInclude>
     <ClInclude Include="Product.h">
       <Filter>源文件\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractProduct.h">
+      <Filter>源文件\AbstactFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory.h">
+      <Filter>源文件\AbstactFactory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
