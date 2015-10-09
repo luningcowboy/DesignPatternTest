@@ -22,6 +22,12 @@
     <Filter Include="源文件\Singleton">
       <UniqueIdentifier>{7c950e92-1f3d-47c0-a452-23e650439e51}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Builder">
+      <UniqueIdentifier>{091af035-2159-4f55-bc31-d75ddb708deb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Prototype">
+      <UniqueIdentifier>{ef6ddbe9-9694-4868-a1f9-4aa8c73d2a19}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -42,6 +48,12 @@
     <ClCompile Include="SingleTon.cpp">
       <Filter>源文件\Singleton</Filter>
     </ClCompile>
+    <ClCompile Include="BuilderProduct.cpp">
+      <Filter>源文件\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototype.cpp">
+      <Filter>源文件\Prototype</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -58,6 +70,12 @@
     </ClInclude>
     <ClInclude Include="SingleTon.h">
       <Filter>源文件\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="BuilderProduct.h">
+      <Filter>源文件\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Prototype.h">
+      <Filter>源文件\Prototype</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

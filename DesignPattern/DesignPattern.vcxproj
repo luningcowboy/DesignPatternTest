@@ -80,16 +80,20 @@
   <ItemGroup>
     <ClCompile Include="AbstractFactory.cpp" />
     <ClCompile Include="AbstractProduct.cpp" />
+    <ClCompile Include="BuilderProduct.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Product.cpp" />
+    <ClCompile Include="Prototype.cpp" />
     <ClCompile Include="SingleTon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h" />
     <ClInclude Include="AbstractProduct.h" />
+    <ClInclude Include="BuilderProduct.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Product.h" />
+    <ClInclude Include="Prototype.h" />
     <ClInclude Include="SingleTon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

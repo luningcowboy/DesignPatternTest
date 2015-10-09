@@ -4,7 +4,7 @@
 #include "AbstractFactory.h"
 #include "AbstractProduct.h"
 #include "SingleTon.h"
-
+#include "Prototype.h"
 using namespace std;
 /*测试Factory设计模式*/
 void testFactory();
@@ -12,11 +12,14 @@ void testFactory();
 void testAbstractFactory();
 /*测试单例模式*/
 void testSingleton();
+/*测试原型模式*/
+void testPrototype();
 int main()
 {
 	testFactory();
 	testAbstractFactory();
 	testSingleton();
+	testPrototype();
 
 	cout << "Hello world" << endl;
 	system("pause");
@@ -51,5 +54,13 @@ void testSingleton()
 {
 	cout << "测试单例模式" << endl;
 	Singleton * pSgn = Singleton::getInstance();
+	cout << "end=============" << endl;
+}
+
+void testPrototype()
+{
+	cout << "原型模式测试" << endl; 
+	Prototype * p = new ConcretePrototype();
+	Prototype * p1 = p->Clone();
 	cout << "end=============" << endl;
 }
