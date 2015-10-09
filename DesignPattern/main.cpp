@@ -5,6 +5,9 @@
 #include "AbstractProduct.h"
 #include "SingleTon.h"
 #include "Prototype.h"
+#include "AbstarctionImp.h"
+#include "Abstarction.h"
+
 using namespace std;
 /*测试Factory设计模式*/
 void testFactory();
@@ -14,12 +17,15 @@ void testAbstractFactory();
 void testSingleton();
 /*测试原型模式*/
 void testPrototype();
+/*测试桥接模式*/
+void testBridge();
 int main()
 {
 	testFactory();
 	testAbstractFactory();
 	testSingleton();
 	testPrototype();
+	testBridge();
 
 	cout << "Hello world" << endl;
 	system("pause");
@@ -63,4 +69,16 @@ void testPrototype()
 	Prototype * p = new ConcretePrototype();
 	Prototype * p1 = p->Clone();
 	cout << "end=============" << endl;
+}
+
+void testBridge()
+{
+	cout << "桥接模式测试" << endl;
+	AbstractionImp * imp = new ConcreteAbstarctionImpA();
+	Abstraction * abs = new RefinedAbstarction(imp);
+	abs->Operation();
+	AbstractionImp * imp1 = new ConcreteAbstarctionImpB();
+	Abstraction * abs2 = new RefinedAbstarction(imp1);
+	abs2->Operation();
+	cout << "end================" << endl;
 }

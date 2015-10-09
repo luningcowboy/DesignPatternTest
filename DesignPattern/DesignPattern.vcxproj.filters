@@ -28,6 +28,9 @@
     <Filter Include="源文件\Prototype">
       <UniqueIdentifier>{ef6ddbe9-9694-4868-a1f9-4aa8c73d2a19}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Bridge">
+      <UniqueIdentifier>{3ea02238-6df5-4190-8d72-acbc525108c6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -54,6 +57,12 @@
     <ClCompile Include="Prototype.cpp">
       <Filter>源文件\Prototype</Filter>
     </ClCompile>
+    <ClCompile Include="AbstarctionImp.cpp">
+      <Filter>源文件\Bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="Abstarction.cpp">
+      <Filter>源文件\Bridge</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -76,6 +85,12 @@
     </ClInclude>
     <ClInclude Include="Prototype.h">
       <Filter>源文件\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstarctionImp.h">
+      <Filter>源文件\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Abstarction.h">
+      <Filter>源文件\Bridge</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

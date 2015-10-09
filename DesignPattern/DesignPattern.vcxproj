@@ -78,6 +78,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Abstarction.cpp" />
+    <ClCompile Include="AbstarctionImp.cpp" />
     <ClCompile Include="AbstractFactory.cpp" />
     <ClCompile Include="AbstractProduct.cpp" />
     <ClCompile Include="BuilderProduct.cpp" />
@@ -88,6 +90,8 @@
     <ClCompile Include="SingleTon.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Abstarction.h" />
+    <ClInclude Include="AbstarctionImp.h" />
     <ClInclude Include="AbstractFactory.h" />
     <ClInclude Include="AbstractProduct.h" />
     <ClInclude Include="BuilderProduct.h" />
