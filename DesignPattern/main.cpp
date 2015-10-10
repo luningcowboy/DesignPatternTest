@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include "Factory.h"
 #include "Product.h"
 #include "AbstractFactory.h"
@@ -9,15 +9,15 @@
 #include "Abstarction.h"
 
 using namespace std;
-/*²âÊÔFactoryÉè¼ÆÄ£Ê½*/
+/*æµ‹è¯•Factoryè®¾è®¡æ¨¡å¼*/
 void testFactory();
-/*²âÊÔ³éÏó¹¤³§Ä£Ê½*/
+/*æµ‹è¯•æŠ½è±¡å·¥å‚æ¨¡å¼*/
 void testAbstractFactory();
-/*²âÊÔµ¥ÀıÄ£Ê½*/
+/*æµ‹è¯•å•ä¾‹æ¨¡å¼*/
 void testSingleton();
-/*²âÊÔÔ­ĞÍÄ£Ê½*/
+/*æµ‹è¯•åŸå‹æ¨¡å¼*/
 void testPrototype();
-/*²âÊÔÇÅ½ÓÄ£Ê½*/
+/*æµ‹è¯•æ¡¥æ¥æ¨¡å¼*/
 void testBridge();
 int main()
 {
@@ -34,7 +34,7 @@ int main()
 
 void testFactory()
 {
-	cout << "²âÊÔ¹¤³§Ä£Ê½" << endl;
+	cout << "æµ‹è¯•å·¥å‚æ¨¡å¼" << endl;
 	Factory * fac = new ConcreteFactory();
 	Product * pro = fac->CreateProduct();
 	cout << "end============" << endl;
@@ -42,7 +42,7 @@ void testFactory()
 
 void testAbstractFactory()
 {
-	cout << "²âÊÔ³éÏó¹¤³§Ä£Ê½" << endl;
+	cout << "æµ‹è¯•æŠ½è±¡å·¥å‚æ¨¡å¼" << endl;
 	AbstarctFactory * af1 = new ConcreteFactory1;
 	AbstarctFactory * af2 = new ConcreteFactory2;
 	AbstarctFactory * af3 = new ConcreteFactory3;
@@ -58,14 +58,14 @@ void testAbstractFactory()
 
 void testSingleton()
 {
-	cout << "²âÊÔµ¥ÀıÄ£Ê½" << endl;
+	cout << "æµ‹è¯•å•ä¾‹æ¨¡å¼" << endl;
 	Singleton * pSgn = Singleton::getInstance();
 	cout << "end=============" << endl;
 }
 
 void testPrototype()
 {
-	cout << "Ô­ĞÍÄ£Ê½²âÊÔ" << endl; 
+	cout << "åŸå‹æ¨¡å¼æµ‹è¯•" << endl; 
 	Prototype * p = new ConcretePrototype();
 	Prototype * p1 = p->Clone();
 	cout << "end=============" << endl;
@@ -73,7 +73,7 @@ void testPrototype()
 
 void testBridge()
 {
-	cout << "ÇÅ½ÓÄ£Ê½²âÊÔ" << endl;
+	cout << "æ¡¥æ¥æ¨¡å¼æµ‹è¯•" << endl;
 	AbstractionImp * imp = new ConcreteAbstarctionImpA();
 	Abstraction * abs = new RefinedAbstarction(imp);
 	abs->Operation();
