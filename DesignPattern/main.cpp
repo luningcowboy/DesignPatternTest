@@ -8,6 +8,7 @@
 #include "AbstarctionImp.h"
 #include "Abstarction.h"
 #include "Adapter.h"
+#include "Decorator.h"
 
 using namespace std;
 /*测试Factory设计模式*/
@@ -22,6 +23,8 @@ void testPrototype();
 void testBridge();
 /*测试原型模式*/
 void testAdapter();
+/*测试装饰模式*/
+void testDecorator();
 int main()
 {
 	testFactory();
@@ -30,6 +33,7 @@ int main()
 	testPrototype();
 	testBridge();
 	testAdapter();
+	testDecorator();
 
 	cout << "Hello world" << endl;
 	system("pause");
@@ -98,5 +102,14 @@ void testAdapter()
 	Adaptee * ade2 = new Adaptee;
 	Target * adt2 = new AdapterB(ade2);
 	adt2->Request();
+	cout << "end================" << endl;
+}
+
+void testDecorator()
+{
+	cout << "装饰模式测试" << endl;
+	Component * pCct = new ConcreteComponent;
+	Decorator * pDot = new ConcreteDecorator(pCct);
+	pDot->Operation();
 	cout << "end================" << endl;
 }

@@ -84,6 +84,7 @@
     <ClCompile Include="AbstractProduct.cpp" />
     <ClCompile Include="Adapter.cpp" />
     <ClCompile Include="BuilderProduct.cpp" />
+    <ClCompile Include="Decorator.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Product.cpp" />
@@ -97,6 +98,7 @@
     <ClInclude Include="AbstractProduct.h" />
     <ClInclude Include="Adapter.h" />
     <ClInclude Include="BuilderProduct.h" />
+    <ClInclude Include="Decorator.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="Prototype.h" />

@@ -34,6 +34,9 @@
     <Filter Include="源文件\Adapter">
       <UniqueIdentifier>{c3c6f28b-3ac2-46ab-b6f8-31afbc0efe02}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Decorator">
+      <UniqueIdentifier>{c88a95b1-5b39-40df-ab32-6b093a685d4c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -69,6 +72,9 @@
     <ClCompile Include="Adapter.cpp">
       <Filter>源文件\Adapter</Filter>
     </ClCompile>
+    <ClCompile Include="Decorator.cpp">
+      <Filter>源文件\Decorator</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -100,6 +106,9 @@
     </ClInclude>
     <ClInclude Include="Adapter.h">
       <Filter>源文件\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator.h">
+      <Filter>源文件\Decorator</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
