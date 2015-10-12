@@ -31,6 +31,9 @@
     <Filter Include="源文件\Bridge">
       <UniqueIdentifier>{3ea02238-6df5-4190-8d72-acbc525108c6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Adapter">
+      <UniqueIdentifier>{c3c6f28b-3ac2-46ab-b6f8-31afbc0efe02}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -63,6 +66,9 @@
     <ClCompile Include="Abstarction.cpp">
       <Filter>源文件\Bridge</Filter>
     </ClCompile>
+    <ClCompile Include="Adapter.cpp">
+      <Filter>源文件\Adapter</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -91,6 +97,9 @@
     </ClInclude>
     <ClInclude Include="Abstarction.h">
       <Filter>源文件\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Adapter.h">
+      <Filter>源文件\Adapter</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

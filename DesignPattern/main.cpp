@@ -7,6 +7,7 @@
 #include "Prototype.h"
 #include "AbstarctionImp.h"
 #include "Abstarction.h"
+#include "Adapter.h"
 
 using namespace std;
 /*测试Factory设计模式*/
@@ -19,6 +20,8 @@ void testSingleton();
 void testPrototype();
 /*测试桥接模式*/
 void testBridge();
+/*测试原型模式*/
+void testAdapter();
 int main()
 {
 	testFactory();
@@ -26,6 +29,7 @@ int main()
 	testSingleton();
 	testPrototype();
 	testBridge();
+	testAdapter();
 
 	cout << "Hello world" << endl;
 	system("pause");
@@ -80,5 +84,19 @@ void testBridge()
 	AbstractionImp * imp1 = new ConcreteAbstarctionImpB();
 	Abstraction * abs2 = new RefinedAbstarction(imp1);
 	abs2->Operation();
+	cout << "end================" << endl;
+}
+
+void testAdapter()
+{
+	cout << "原型模式测试" << endl;
+	Adaptee *ade = new Adaptee;
+	Target * adt = new Adapter();
+
+	adt->Request();
+
+	Adaptee * ade2 = new Adaptee;
+	Target * adt2 = new AdapterB(ade2);
+	adt2->Request();
 	cout << "end================" << endl;
 }
