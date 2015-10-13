@@ -14,6 +14,7 @@
 #include "Leaf.h"
 #include "Flyweight.h"
 #include "FlyweightFactory.h"
+#include "Facade.h"
 
 using namespace std;
 /*测试Factory设计模式*/
@@ -34,6 +35,8 @@ void testDecorator();
 void testComposite();
 /*测试享元模式*/
 void testFlyweight();
+/*测试外观模式*/
+void testFacade();
 int main()
 {
 	testFactory();
@@ -45,6 +48,7 @@ int main()
 	testDecorator();
 	testComposite();
 	testFlyweight();
+	testFacade();
 
 	cout << "Hello world" << endl;
 	system("pause");
@@ -146,4 +150,13 @@ void testFlyweight()
 	Flyweight * fw3 = fc->GetFlyweight("world!");
 	Flyweight * fw4 = fc->GetFlyweight("hello");
 	cout << "end================" << endl;
+}
+
+void testFacade()
+{
+	cout << "外观模式测试" << endl;
+	Facade * f = new Facade();
+	f->OperationWrapper();
+	cout << "end================" << endl;
+
 }

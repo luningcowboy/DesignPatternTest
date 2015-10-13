@@ -43,6 +43,9 @@
     <Filter Include="源文件\Flyweight">
       <UniqueIdentifier>{bb3506a5-e912-4ade-9c90-c9fd1948430a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Facade">
+      <UniqueIdentifier>{11bf0bd1-55dd-482a-bd9e-81934be3a632}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -96,6 +99,9 @@
     <ClCompile Include="FlyweightFactory.cpp">
       <Filter>源文件\Flyweight</Filter>
     </ClCompile>
+    <ClCompile Include="Facade.cpp">
+      <Filter>源文件\Facade</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -145,6 +151,9 @@
     </ClInclude>
     <ClInclude Include="FlyweightFactory.h">
       <Filter>源文件\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="Facade.h">
+      <Filter>源文件\Facade</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
