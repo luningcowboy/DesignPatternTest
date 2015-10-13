@@ -46,6 +46,9 @@
     <Filter Include="源文件\Facade">
       <UniqueIdentifier>{11bf0bd1-55dd-482a-bd9e-81934be3a632}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Proxy">
+      <UniqueIdentifier>{52269826-c810-4ed9-900e-9cdb388f2272}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -102,6 +105,9 @@
     <ClCompile Include="Facade.cpp">
       <Filter>源文件\Facade</Filter>
     </ClCompile>
+    <ClCompile Include="Proxy.cpp">
+      <Filter>源文件\Proxy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -154,6 +160,9 @@
     </ClInclude>
     <ClInclude Include="Facade.h">
       <Filter>源文件\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy.h">
+      <Filter>源文件\Proxy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
