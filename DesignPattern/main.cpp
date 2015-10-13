@@ -16,6 +16,7 @@
 #include "FlyweightFactory.h"
 #include "Facade.h"
 #include "Proxy.h"
+#include "Template.h"
 
 using namespace std;
 /*测试Factory设计模式*/
@@ -40,6 +41,8 @@ void testFlyweight();
 void testFacade();
 /*测试代理模式*/
 void testProxy();
+/*测试模板模式*/
+void testTemplate();
 int main()
 {
 	testFactory();
@@ -53,6 +56,7 @@ int main()
 	testFlyweight();
 	testFacade();
 	testProxy();
+	testTemplate();
 
 	cout << "Hello world" << endl;
 	system("pause");
@@ -171,5 +175,15 @@ void testProxy()
 	Subject * sub = new ConcreteSubject();
 	Proxy * p = new Proxy(sub);
 	p->Request();
+	cout << "end================" << endl;
+}
+
+void testTemplate()
+{
+	cout << "模板模式测试" << endl;
+	AbstractClass * p1 = new ConcreteClass1();
+	AbstractClass * p2 = new ConcreteClass2();
+	p1->TemplateMethod();
+	p2->TemplateMethod();
 	cout << "end================" << endl;
 }
