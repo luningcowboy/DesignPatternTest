@@ -9,6 +9,9 @@
 #include "Abstarction.h"
 #include "Adapter.h"
 #include "Decorator.h"
+#include "Com.h"
+#include "Composite.h"
+#include "Leaf.h"
 
 using namespace std;
 /*测试Factory设计模式*/
@@ -25,6 +28,8 @@ void testBridge();
 void testAdapter();
 /*测试装饰模式*/
 void testDecorator();
+/*测试混合模式*/
+void testComposite();
 int main()
 {
 	testFactory();
@@ -34,6 +39,7 @@ int main()
 	testBridge();
 	testAdapter();
 	testDecorator();
+	testComposite();
 
 	cout << "Hello world" << endl;
 	system("pause");
@@ -111,5 +117,18 @@ void testDecorator()
 	Component * pCct = new ConcreteComponent;
 	Decorator * pDot = new ConcreteDecorator(pCct);
 	pDot->Operation();
+	cout << "end================" << endl;
+}
+
+void testComposite()
+{
+	cout << "混合模式测试" << endl;
+	Leaf * l = new Leaf;
+	l->Operation();
+	Composite * com = new Composite();
+	com->Add(l);
+	com->Operation();
+	Com *ll = com->GetChild(0);
+	ll->Operation();
 	cout << "end================" << endl;
 }

@@ -37,6 +37,9 @@
     <Filter Include="源文件\Decorator">
       <UniqueIdentifier>{c88a95b1-5b39-40df-ab32-6b093a685d4c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Composite">
+      <UniqueIdentifier>{152b8cde-4c8d-4197-b76e-d137977ec5c6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -75,6 +78,15 @@
     <ClCompile Include="Decorator.cpp">
       <Filter>源文件\Decorator</Filter>
     </ClCompile>
+    <ClCompile Include="Com.cpp">
+      <Filter>源文件\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="Composite.cpp">
+      <Filter>源文件\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="Leaf.cpp">
+      <Filter>源文件\Composite</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -109,6 +121,15 @@
     </ClInclude>
     <ClInclude Include="Decorator.h">
       <Filter>源文件\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Com.h">
+      <Filter>源文件\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="Composite.h">
+      <Filter>源文件\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="Leaf.h">
+      <Filter>源文件\Composite</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

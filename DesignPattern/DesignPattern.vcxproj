@@ -84,8 +84,11 @@
     <ClCompile Include="AbstractProduct.cpp" />
     <ClCompile Include="Adapter.cpp" />
     <ClCompile Include="BuilderProduct.cpp" />
+    <ClCompile Include="Com.cpp" />
+    <ClCompile Include="Composite.cpp" />
     <ClCompile Include="Decorator.cpp" />
     <ClCompile Include="Factory.cpp" />
+    <ClCompile Include="Leaf.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="Prototype.cpp" />
@@ -98,8 +101,11 @@
     <ClInclude Include="AbstractProduct.h" />
     <ClInclude Include="Adapter.h" />
     <ClInclude Include="BuilderProduct.h" />
+    <ClInclude Include="Com.h" />
+    <ClInclude Include="Composite.h" />
     <ClInclude Include="Decorator.h" />
     <ClInclude Include="Factory.h" />
+    <ClInclude Include="Leaf.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="Prototype.h" />
     <ClInclude Include="SingleTon.h" />
