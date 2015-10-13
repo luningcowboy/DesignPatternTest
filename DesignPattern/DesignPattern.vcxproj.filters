@@ -40,6 +40,9 @@
     <Filter Include="源文件\Composite">
       <UniqueIdentifier>{152b8cde-4c8d-4197-b76e-d137977ec5c6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Flyweight">
+      <UniqueIdentifier>{bb3506a5-e912-4ade-9c90-c9fd1948430a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -87,6 +90,12 @@
     <ClCompile Include="Leaf.cpp">
       <Filter>源文件\Composite</Filter>
     </ClCompile>
+    <ClCompile Include="Flyweight.cpp">
+      <Filter>源文件\Flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="FlyweightFactory.cpp">
+      <Filter>源文件\Flyweight</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -130,6 +139,12 @@
     </ClInclude>
     <ClInclude Include="Leaf.h">
       <Filter>源文件\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="Flyweight.h">
+      <Filter>源文件\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyweightFactory.h">
+      <Filter>源文件\Flyweight</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

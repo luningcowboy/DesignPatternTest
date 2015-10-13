@@ -12,6 +12,8 @@
 #include "Com.h"
 #include "Composite.h"
 #include "Leaf.h"
+#include "Flyweight.h"
+#include "FlyweightFactory.h"
 
 using namespace std;
 /*测试Factory设计模式*/
@@ -30,6 +32,8 @@ void testAdapter();
 void testDecorator();
 /*测试混合模式*/
 void testComposite();
+/*测试享元模式*/
+void testFlyweight();
 int main()
 {
 	testFactory();
@@ -40,6 +44,7 @@ int main()
 	testAdapter();
 	testDecorator();
 	testComposite();
+	testFlyweight();
 
 	cout << "Hello world" << endl;
 	system("pause");
@@ -130,5 +135,15 @@ void testComposite()
 	com->Operation();
 	Com *ll = com->GetChild(0);
 	ll->Operation();
+	cout << "end================" << endl;
+}
+void testFlyweight()
+{
+	cout << "享元模式测试" << endl;
+	FlyweightFactory * fc = new FlyweightFactory();
+	Flyweight * fw1 = fc->GetFlyweight("hello");
+	Flyweight * fw2 = fc->GetFlyweight("hello");
+	Flyweight * fw3 = fc->GetFlyweight("world!");
+	Flyweight * fw4 = fc->GetFlyweight("hello");
 	cout << "end================" << endl;
 }
