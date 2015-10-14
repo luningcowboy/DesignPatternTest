@@ -17,6 +17,8 @@
 #include "Facade.h"
 #include "Proxy.h"
 #include "Template.h"
+#include "Context.h"
+#include "Strategy.h"
 
 using namespace std;
 /*测试Factory设计模式*/
@@ -43,6 +45,8 @@ void testFacade();
 void testProxy();
 /*测试模板模式*/
 void testTemplate();
+/*测试策略模式*/
+void testStrategy();
 int main()
 {
 	testFactory();
@@ -57,6 +61,7 @@ int main()
 	testFacade();
 	testProxy();
 	testTemplate();
+	testStrategy();
 
 	cout << "Hello world" << endl;
 	system("pause");
@@ -185,5 +190,27 @@ void testTemplate()
 	AbstractClass * p2 = new ConcreteClass2();
 	p1->TemplateMethod();
 	p2->TemplateMethod();
+	cout << "end================" << endl;
+}
+
+void testStrategy()
+{
+	cout << "策略模式测试" << endl;
+	Strategy * ps;
+	ps = new ConcreteStrategyA();
+	Context *pc = new Context(ps);
+	pc->DoAction();
+	if (nullptr != pc)
+	{
+		delete pc;
+	}
+
+	Strategy * ps1 = new ConcreteStrategyB();
+	Context * pc1 = new Context(ps1);
+	pc1->DoAction();
+	if (nullptr != pc1)
+	{
+		delete pc1;
+	}
 	cout << "end================" << endl;
 }
