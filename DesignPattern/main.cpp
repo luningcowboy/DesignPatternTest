@@ -21,7 +21,8 @@
 #include "Strategy.h"
 #include "state/State.h"
 #include "state/ContextState.h"
-
+#include "Observer.h"
+#include "Subject.h"
 using namespace std;
 /*测试Factory设计模式*/
 void testFactory();
@@ -52,6 +53,8 @@ void testStrategy();
 /*测试state模式*/
 void testState();
 void testState01();
+/*测试观察者模式*/
+void testObserver();
 int main()
 {
 	testFactory();
@@ -69,7 +72,7 @@ int main()
 	testStrategy();
 	testState();
 	//testState01();
-
+	testObserver();
 	cout << "Hello world" << endl;
 	system("pause");
 	return 0;
@@ -249,4 +252,16 @@ void testState01()
 	cs->OperationChangeState(); 
 	cs->OperationChangeState();
 	cout << "end==================" <<endl;
+}
+void testObserver()
+{
+	cout << "观察者模式测试" << endl;
+	Sub* sub = new ConcreteSub();
+	Observer * o1 = new ObserverA(sub);
+	ObserverB * o2 = new ObserverB(sub);
+	sub->SetState("old");
+	sub->Notify();
+	sub->SetState("new");
+	sub->Notify();
+	cout << "end====================" << endl;
 }
