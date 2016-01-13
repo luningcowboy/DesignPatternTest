@@ -34,4 +34,37 @@ public:
 
 };
 
+class StateA : public State
+{
+public:
+	StateA();
+	virtual ~StateA();
+	virtual void OperationInterface(ContextSate*);
+	virtual void OperationChangeState(ContextSate*);
+};
+class StateB : public State
+{
+public:
+	StateB();
+	virtual ~StateB();
+	virtual void OperationInterface(ContextSate*);
+	virtual void OperationChangeState(ContextSate*);
+};
+class StateC : public State
+{
+public:
+	StateC();
+	virtual ~StateC();
+	virtual void OperationInterface(ContextSate*);
+	virtual void OperationChangeState(ContextSate*);
+};
+class StateD : public State
+{
+public:
+	StateD();
+	virtual ~StateD();
+	virtual void OperationInterface(ContextSate*);
+	virtual void OperationChangeState(ContextSate*);
+};
+
 #endif

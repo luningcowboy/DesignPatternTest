@@ -3,10 +3,12 @@
 
 ContextSate::ContextSate()
 {
+	_info = "a_2_b";
 }
 ContextSate::ContextSate(State* state)
 {
-
+	this->_state = state;
+	_info = "a_2_b";
 }
 ContextSate::~ContextSate()
 {
@@ -14,7 +16,7 @@ ContextSate::~ContextSate()
 }
 void ContextSate::OperationInterface()
 {
-
+	_state->OperationInterface(this);
 }
 bool ContextSate::changeState(State * state)
 {
@@ -23,5 +25,13 @@ bool ContextSate::changeState(State * state)
 }
 void ContextSate::OperationChangeState()
 {
-
+	_state->OperationChangeState(this);
+}
+std::string ContextSate::getInfo()
+{
+	return _info;
+}
+void ContextSate::setInfo(std::string info)
+{
+	_info = info;
 }

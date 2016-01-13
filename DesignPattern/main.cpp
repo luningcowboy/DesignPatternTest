@@ -49,7 +49,9 @@ void testProxy();
 void testTemplate();
 /*测试策略模式*/
 void testStrategy();
+/*测试state模式*/
 void testState();
+void testState01();
 int main()
 {
 	testFactory();
@@ -66,6 +68,7 @@ int main()
 	testTemplate();
 	testStrategy();
 	testState();
+	//testState01();
 
 	cout << "Hello world" << endl;
 	system("pause");
@@ -220,11 +223,12 @@ void testStrategy()
 }
 void testState()
 {
+	cout << "状态模式测试01" << endl;
 	State * st = new ConcreteStateA();
 	ContextSate * con = new ContextSate(st);
-	con->OperationInterface();
-	con->OperationInterface();
-	con->OperationInterface();
+	con->OperationChangeState();
+	con->OperationChangeState();
+	con->OperationChangeState();
 	if (con != nullptr)
 	{
 		delete con;
@@ -233,4 +237,16 @@ void testState()
 	{
 		st = nullptr;
 	}
+	cout << "end====================" << endl;
+}
+void testState01()
+{
+	cout << "状态模式测试02" << endl;
+	State * st = new StateA();
+	ContextSate * cs = new ContextSate();
+	cs->OperationChangeState();
+	cs->OperationChangeState(); 
+	cs->OperationChangeState(); 
+	cs->OperationChangeState();
+	cout << "end==================" <<endl;
 }
