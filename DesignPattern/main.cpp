@@ -19,6 +19,8 @@
 #include "Template.h"
 #include "Context.h"
 #include "Strategy.h"
+#include "state/State.h"
+#include "state/ContextState.h"
 
 using namespace std;
 /*测试Factory设计模式*/
@@ -47,6 +49,7 @@ void testProxy();
 void testTemplate();
 /*测试策略模式*/
 void testStrategy();
+void testState();
 int main()
 {
 	testFactory();
@@ -62,6 +65,7 @@ int main()
 	testProxy();
 	testTemplate();
 	testStrategy();
+	testState();
 
 	cout << "Hello world" << endl;
 	system("pause");
@@ -213,4 +217,20 @@ void testStrategy()
 		delete pc1;
 	}
 	cout << "end================" << endl;
+}
+void testState()
+{
+	State * st = new ConcreteStateA();
+	ContextSate * con = new ContextSate(st);
+	con->OperationInterface();
+	con->OperationInterface();
+	con->OperationInterface();
+	if (con != nullptr)
+	{
+		delete con;
+	}
+	if (st != nullptr)
+	{
+		st = nullptr;
+	}
 }
