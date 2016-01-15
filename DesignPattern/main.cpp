@@ -23,6 +23,7 @@
 #include "state/ContextState.h"
 #include "Observer.h"
 #include "Subject.h"
+#include "Memento.h"
 using namespace std;
 /*测试Factory设计模式*/
 void testFactory();
@@ -55,6 +56,8 @@ void testState();
 void testState01();
 /*测试观察者模式*/
 void testObserver();
+/*测试备忘录模式*/
+void testMemento();
 int main()
 {
 	testFactory();
@@ -73,6 +76,7 @@ int main()
 	testState();
 	//testState01();
 	testObserver();
+	testMemento();
 	cout << "Hello world" << endl;
 	system("pause");
 	return 0;
@@ -264,4 +268,16 @@ void testObserver()
 	sub->SetState("new");
 	sub->Notify();
 	cout << "end====================" << endl;
+}
+void testMemento()
+{
+	Originator * o = new Originator();
+	o->setState("old");
+	o->PrintState();
+	Memento * m = o->CreateMemento();
+	o->setState("new");
+	o->PrintState();
+	o->RestoreToMemento(m);
+	o->PrintState();
+	
 }
